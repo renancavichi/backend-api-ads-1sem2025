@@ -1,0 +1,22 @@
+{
+  "name": "api-backend-ads",
+  "version": "1.0.0",
+  "description": "Projeto node com express para construir API backend",
+  "main": "src/server.js",
+  "type":"module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "prisma",
+    "backend"
+  ],
+  "author": "Renan Cavichi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
