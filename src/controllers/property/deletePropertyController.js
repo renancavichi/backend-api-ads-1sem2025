@@ -10,4 +10,4 @@ export default function  deletePropertyController(req, res) {
             propriedade: "Casa"
         }
     })
-}s
+}
