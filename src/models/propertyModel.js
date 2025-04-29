@@ -1,6 +1,22 @@
 import { PrismaClient } from "@prisma/client";
+import { z } from 'zod'
 
 const prisma = new PrismaClient()
+
+const propertySchema = z.object({
+  id: z.number().positive(),     
+  type: z.string().min(5).max(7),    
+  adress: z.string().min(6).max(350),   
+  rooms: z.number().positive(),  
+  property: z.string().min(4).max(11) 
+})
+
+export const propertyValidator = (property, partial = null) => {
+    if(partial){
+        return propertySchema.partial(partial).safeParse(property)
+    }
+    return propertySchema.safeParse(property)
+}
 
 export async function create(property){
     const result = await prisma.property.create({

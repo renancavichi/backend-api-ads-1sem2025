@@ -43,3 +43,31 @@
  - Gerar o as tabelas do banco com base em um schema do prisma (npx prisma db push)
  - Instalar @prisma/client (npm i @prisma/client)
  - Gerar as funções para o client (npx prisma generate)
+
+ ## Próximos Tópicos
+
+  - Projeto
+  - Validação de Dados com Zod
+  - Middleware e Log
+  - Error Handler
+  - JWT (Controle de Sessão)
+
+
+# Projeto
+
+ - Recomendado até 3 pessoas
+ - 2 CRUD por integrante
+ - Tema "livre" validado com Professor
+ - Tempo de aula
+ - Pode usar IA * Sabendo o que está fazendo!
+ - Projeto Full stack (Front e Back)
+ - Usar um recurso não visto em aula (1 ponto) * Validar com Professor
+
+### Sugestões de Funcionalidades Extras
+
+ - Upload de imagens (Cloudinary)
+ - Upload de arquivos
+ - Teste unitário
+ - Libs de Documentação da API
+ - Gerador de PDF
+ - Gerador de xlsx ou csv (Excel)
