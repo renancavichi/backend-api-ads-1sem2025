@@ -57,11 +57,13 @@
 
  - Recomendado até 3 pessoas
  - 2 CRUD por integrante
+ - Validação de Dados com Zod
  - Tema "livre" validado com Professor
  - Tempo de aula
  - Pode usar IA * Sabendo o que está fazendo!
  - Projeto Full stack (Front e Back)
  - Usar um recurso não visto em aula (1 ponto) * Validar com Professor
+ - Entrega 24/05 (Apresentação para o Prof.)
 
 ### Sugestões de Funcionalidades Extras
 
