@@ -47,9 +47,9 @@
  ## Próximos Tópicos
 
   - Projeto
-  - Validação de Dados com Zod
-  - Middleware e Log
-  - Error Handler
+  - OK Validação de Dados com Zod
+  - OK Middleware e Log
+  - OK Error Handler
   - JWT (Controle de Sessão)
 
 
@@ -63,7 +63,7 @@
  - Pode usar IA * Sabendo o que está fazendo!
  - Projeto Full stack (Front e Back)
  - Usar um recurso não visto em aula (1 ponto) * Validar com Professor
- - Entrega 24/05 (Apresentação para o Prof.)
+ - Entregar até 24/05 (Apresentação para o Prof.)
 
 ### Sugestões de Funcionalidades Extras
 

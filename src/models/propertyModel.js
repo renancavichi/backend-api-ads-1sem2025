@@ -19,7 +19,7 @@ export const propertyValidator = (property, partial = null) => {
 }
 
 export async function create(property){
-    const result = await prisma.property.create({
+    const result = await prisma.propertylaskjdf.create({
         data: property
     })
     return result
