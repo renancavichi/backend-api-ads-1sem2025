@@ -4,11 +4,34 @@ import { z } from 'zod'
 const prisma = new PrismaClient()
 
 const propertySchema = z.object({
-  id: z.number().positive(),     
-  type: z.string().min(5).max(7),    
-  adress: z.string().min(6).max(350),   
-  rooms: z.number().positive(),  
-  property: z.string().min(4).max(11) 
+  id: z.number({
+        required_error: 'O id é obrigatório.',
+        invalid_type_error: 'O id deve ser um número.'
+    })
+    .positive({message: "O ID deve ser um valor numérico positivo."}),    
+  type: z.string({
+        required_error: 'O tipo é obrigatório.',
+        invalid_type_error: 'O tipo deve ser um texto.'
+    })
+    .min(5, {message: "O tipo deve ter no mínimo 5 caracteres."})
+    .max(7, {message: "O tipo deve ter no máximo 7 caracteres."}),    
+  adress: z.string({
+        required_error: 'O endereço é obrigatório.',
+        invalid_type_error: 'O endereço deve ser um texto.'
+    })
+    .min(6, {message: "O endereço deve ter no mínimo 6 caracteres."})
+    .max(350, {message: "O endereço deve ter no máximo 350 caracteres."}),   
+  rooms: z.number({
+        required_error: 'O quarto é obrigatório.',
+        invalid_type_error: 'O quarto deve ser um número.'
+    })
+    .positive(),  
+  property: z.string({
+        required_error: 'O propriedade é obrigatório.',
+        invalid_type_error: 'O propriedade deve ser um texto.'
+    })
+    .min(4,  {message: "A propriedade deve ter no mínimo 4 caracteres."})
+    .max(11, {message: "A propriedade deve ter no máximo 11 caracteres."}) 
 })
 
 export const propertyValidator = (property, partial = null) => {
