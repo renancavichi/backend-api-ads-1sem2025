@@ -63,7 +63,7 @@
  - Pode usar IA * Sabendo o que está fazendo!
  - Projeto Full Stack (Front e Back)
  - Usar um recurso não visto em aula (1 ponto) * Validar com Professor
- - Entregar até 24/05 (Apresentação para o Prof.)
+ - Entregar até 24/06 (Apresentação para o Prof.)
 
 ### Sugestões de Funcionalidades Extras
 

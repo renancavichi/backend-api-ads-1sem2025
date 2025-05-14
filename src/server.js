@@ -2,6 +2,7 @@
 import express from 'express'
 import userRouter from './routers/userRouter.js'
 import propertyRouter from './routers/propertyRouter.js'
+import authRouter from './routers/authRouter.js'
 import cors from 'cors'
 import { logger } from './middlewares/logger.js'
 import { errorHandler } from './middlewares/errorsHandler.js'
@@ -18,6 +19,7 @@ app.use(express.json())
 app.get('/', welcomeController)
 app.use('/user', userRouter)
 app.use('/property', propertyRouter)
+app.use('/auth', authRouter)
 
 app.use('*', notFoundController)
 app.use(errorHandler)
